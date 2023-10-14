@@ -8,7 +8,7 @@ public class Program
             double b;
             double total;
             char oper;
-
+            Console.WriteLine("Calculator");
             Console.WriteLine("Input first operand:");
             a = Convert.ToDouble(Console.ReadLine());
 
