@@ -36,10 +36,14 @@ public class Program
                 Console.WriteLine(a + "*" + b + "=" + total);
             }
 
-            else if (oper == '/')
+            else if (oper == '/' && b != 0.0)
             {
                 total = a / b;
                 Console.WriteLine(a + "/" + b + "=" + total);
+            }
+            else if (oper == '/' && b == 0)
+            {
+                Console.WriteLine("Second operator is 0 It's ERROR!");
             }
             else
             {
