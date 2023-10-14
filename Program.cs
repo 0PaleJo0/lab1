@@ -4,6 +4,9 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        char again = 'Y';
+        while(again=='Y')
+        {
             double a;
             double b;
             double total;
@@ -43,11 +46,14 @@ public class Program
             }
             else if (oper == '/' && b == 0)
             {
-                Console.WriteLine("Second operator is 0 It's ERROR!");
+                Console.WriteLine("Second operator is 0. It's ERROR!");
             }
             else
             {
                 Console.WriteLine("Unknown operator");
-            } 
+            }
+            Console.WriteLine("Are you want repeat your experience? (Y/N)");
+            again = Convert.ToChar(Console.ReadLine());
+        }    
     }
 }
